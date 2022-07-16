@@ -10,9 +10,38 @@
 </head>
 
 <body>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Enter New Book Details</h1>
+            <label for="title"><b>Title:</b></label>
+            <input type="text" placeholder="Enter Title" name="title" id="title" required>
+            <label for="author"><b>Author:</b></label>
+            <input type="text" placeholder="Enter Author" name="author" id="author" required>
+            <label for="pages"><b>Pages:</b></label>
+            <input type="text" placeholder="Enter Pages" name="pages" id="pages" required>
+            <button type="submit" class="btn" onclick="closeForm()">Add Book</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
     <div class="container">
+        <button onclick="openForm()">NEW BOOK</button>
+
+
         <div class="card">
-            <p>test</p>
+            <div class="desc title">
+                <h2>Title:</h2>
+                <p>Brothers Karamazov</p>
+            </div>
+            <div class="desc author">
+                <h2>Author:</h2>
+                <p>Dostoevsky</p>
+            </div>
+            <div class="desc pages">
+                <h2>Pages:</h2>
+                <p>300</p>
+            </div>
+
         </div>
         <div class="card">
             <p>test2</p>
